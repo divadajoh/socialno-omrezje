@@ -1,0 +1,283 @@
+/*
+	|| == STYLE BY DAVID HOJA == ||
+*/
+
+h1 {
+	margin-left:40%;
+	color:#29A3CC;
+	font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size:2em;
+	cursor:pointer;
+	-webkit-transition: opacity 1s; 
+    transition: opacity 1s;
+}
+
+h1:hover {
+	opacity:0.5;
+}
+
+section {
+	position:relative;
+	max-width:70%;
+	min-width:600px;
+	height:600px;
+	clear:left;
+	margin-left:20%;
+	margin-top:-1%;
+}
+
+#contactContainer {
+	float:left;
+	width:30%;
+	min-width:150px;
+	height:90%;
+	left:0;
+	border:1px solid black;
+	border-right:0px;
+	overflow:auto;
+}
+
+#messageContainer {
+	float:left;
+	width:60%;
+	min-width:350px;
+	height:90%;
+	border:1px solid black;
+	border-left-size: 0px;
+}
+
+.contact {
+	position:relative;
+	margin:3px 0px 0px 5px;
+	width:96%;
+	cursor: pointer;
+}
+
+.contact:first-child {
+	margin-top:10px;
+}
+
+
+.contact img {
+	width:50px;
+	height:50px;
+	margin-left:2px;
+	vertical-align: middle;
+	border-radius:4px;
+}
+
+.contact span {
+	font-family:"Arial Narrow", Arial, sans-serif;
+	font-size:16px;
+	padding-left:5px;
+}
+
+.messageArea {
+	width:100%;
+	height:85%;
+	overflow:auto;
+	border-bottom: 1px solid gray;
+}
+
+input[name=content] {
+	width:80%;
+	min-width:250px;
+	height:12%;
+	margin:5px 0px 0px 1px;
+	word-break:break-word;
+	display:block;
+}
+
+input[name=submit] {
+	float:right;
+	height:60px;
+	width: 15%;
+	margin:5px 5px 0px 5px;
+	background-color:#29A3CC;
+	border-radius: 10px;
+	color:white;
+	cursor:pointer;
+}
+
+input[name=srch] {
+	width:95%;
+	margin-left:2%;
+	margin-top:2%;
+	height:50px;
+	cursor:pointer;
+}
+
+input[name=srch]:hover {
+	border-color:#29A3CC;
+}
+
+
+.selected {
+	background-color: #29A3CC;
+	color:white;
+}
+
+.contentbox {
+	margin-top:-10px;
+}
+
+
+.msgbox {
+	margin-top:30px;
+	margin-left:10px;
+	width:50%;
+	height:30px;
+}
+
+.msgbox span {
+	margin-top:5px;
+}
+
+.msgbox:first-child {
+	margin-top:0;
+	padding-top:0;
+}
+
+.msgbox img {
+	vertical-align: middle;
+	width:40px;
+	height:40px;
+	border:1px solid gray;
+	border-radius:5px;
+}
+
+.msgbox span {
+	line-height:3;
+	font-family:"Arial Narrow", Arial, sans-serif;
+	font-size: 14px;
+	cursor: pointer;
+	margin-top:0;
+}
+
+
+
+.first {
+	margin-top:-20px;
+}
+
+.message {
+	display:block;
+	margin-top:10px;
+	margin-left:60px;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size:13px;
+	width:70%;
+	cursor: pointer;
+}
+
+#newConversationButton {
+	width:95%;
+	height:60px;
+	cursor: pointer;
+	margin:3px 0px 0px 5px;
+	text-align:center;
+}
+
+#newConversationButton:first-child {
+	color:gray;
+	height:60px;
+	line-height: 30px;
+	font-family:"Arial Narrow", Arial, sans-serif;
+	border: 1px solid #a5adb0;
+}
+
+#newConversationButton:first-child:hover {
+	border-color:#29A3CC;
+	color:#29A3CC;
+}
+
+#searchUsers {
+	width:75%;
+	height:40px;
+}
+
+#cancelSearch {
+	cursor:pointer;
+}
+#cancelSearch img {
+	position:relative;
+	left:12px;
+	top:12px;
+	width:30px;
+	height:30px;
+}
+
+#searchUsers, #cancelSearch {
+	display:inline;
+}
+
+
+.srchResult {
+	width:95%;
+	height:60px;
+	margin:3px 0px 0px 5px;
+	border: 1px solid gray;
+	cursor:pointer;
+}
+
+.srchResult:hover {
+	background-color:#29A3CC;
+	border-color:#29A3CC;
+}
+
+.srchResult img {
+	width:50px;
+	height:50px;
+	vertical-align: middle;
+	border-radius:5px;
+}
+
+.srchResult span {
+	font-family:"Arial Narrow", Arial, sans-serif;
+	font-size:16px;
+	padding-left:5px;
+
+}
+
+.srchContainer {
+	width:95%;
+	border:1px solid black;
+}
+
+/* || DELETE CONVERSATION BUTTON || */
+#mDelete:hover {
+	display:inherit;
+	position:absolute;
+	right:5px;
+	top:15px;
+	width:20px; 
+	height:20px
+}
+
+#deletePos {
+	display:inline-block;
+	color:white;
+	width:30px;
+	height:20px;
+	height:40%;
+	background-color:green;
+	opacity:0.5;
+	border-radius:5px;
+	margin-left:10px;
+}
+
+#deletePos:hover, #deleteNeg:hover {
+	opacity:1.0;
+}
+
+#deleteNeg {
+	display:inline-block;
+	color:white;
+	width:30px;
+	height:20px;
+	height:40%;
+	opacity:0.5;
+	background-color: red;
+	border-radius:5px;
+	margin-left:10px;
+}

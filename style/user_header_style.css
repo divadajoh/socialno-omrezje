@@ -1,0 +1,189 @@
+/*
+|| Style by David Hoja ||
+*/
+
+header{
+	width: 1200px;
+	height: 60px;
+	min-width: 100%;
+	background-color: #29A3CC;
+	overflow:hidden;
+}
+
+#searchInput {
+	height: 23px;
+	width: 220px;
+	margin-top: 15px;
+	margin-left: 20px;
+	border-radius: 4px;
+}
+
+#searchIcon {
+	cursor:pointer;
+}
+
+
+
+/* || LOGOUT BUTTON || */
+#logoutButton {
+	display:inline;
+	width:60px; 
+	height:30px;
+	background-color: #29A3CC; 
+	float:right;
+	margin: 15px 10px 0 0;
+	text-align:center;
+	cursor:pointer;	
+	line-height: 2;
+	border-radius:2px;
+	color:white;
+}
+
+#logoutButton:hover {
+	opacity:0.8;
+}
+
+/* TEXT IN BUTTON */
+#logoutButton:first-child {
+	font-family:"Times New Roman", Times, serif;
+}
+
+#notificationButton {
+	display:inline-block;
+	margin-left:20px;
+	vertical-align: middle;
+	width: 40px;
+	height:35px;
+	cursor: pointer;
+
+}
+
+#notificationButton:hover {
+	box-shadow: 0px 5px 3px -3px #ffffff;
+}
+
+#notificationButton img {
+	width:40px;
+	height:35px;
+}
+
+#messageButton {
+	display:inline-block;
+	width:40px;
+	height:35px;
+	margin-left: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#messageButton img {
+	width:25px;
+	height:25px;
+	margin-left:7px;
+	margin-top:5px;
+}
+
+#messageButton:hover {
+	box-shadow: 0px 5px 3px -3px #ffffff;
+}
+
+#settingsButton {
+	display:inline-block;
+	width:45px;
+	height:30px;
+	vertical-align: middle;
+	margin: 5px 0px 0px 10px;
+	cursor: pointer;
+}
+
+#settingsButton img {
+	width:25px;
+	height:25px;
+	margin-left: 10px;
+}
+
+#settingsButton:hover {
+	box-shadow: 0px 5px 3px -3px #ffffff;
+}
+
+/* PROFILE PICTURE */
+#profile_pic {
+	width: 45px;
+	height: 45px;
+	margin-left: 50%;
+	vertical-align: middle;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+
+/* USER FULLNAME */
+#uhfName {
+	margin-left: 2px;
+	color: white;
+	cursor: pointer;
+}
+
+#searchResults {
+	float:left;
+	margin-left: 20px;
+	margin-top: -1%;
+	width: 400px;
+	height: 140px;
+	border: 1px solid gray;
+	opacity:0;
+}
+
+.searchResultImg {
+	margin-top:5px; 
+	margin-left:3px; 
+	width:60px; 
+	height: 60px;
+    border:1px solid gray;
+}
+
+.searchResultDiv {
+	position:relative;
+	height:70px; 
+	border-bottom: 1px solid #a5adb0;
+    background-color:white;
+    cursor:pointer;
+    color:white;
+}
+
+.searchResultDiv:hover {
+ 	background-color: #29A3CC;
+ 	color:white;
+}
+
+.searchResultName {
+	display: inline;
+	position:absolute;
+	margin-left: 10px;
+	padding-top:10px;
+	font-family:"Times New Roman", Times, serif;
+	color:black;
+}
+
+/* || SEARCH RESULT VIEW PROFILE BUTTON */
+.vpButton{
+	float:right;
+	margin-top: 25px;
+	margin-right: 10px;
+	background-color: #29A3CC;
+	width: 70px;
+	height: 25px;
+	text-align:center;
+	border-radius: 2px;
+	cursor: pointer;
+	z-index:1;
+}
+
+.vpButton p {
+	margin:0;
+	padding-top:3px; 
+}
+
+#searchInput, #uhfName, #profile_pic, #logoutButton {
+	display:inline-block;
+}

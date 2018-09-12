@@ -1,0 +1,175 @@
+/*
+ || Style by David Hoja ||
+*/
+
+html,body {
+	height:100%;
+	width:100%;
+}
+
+section {
+	position: relative;
+	width: 600px;
+	min-width:600px;
+	height:600px;
+	min-height:600px;
+	overflow:auto;
+	margin:auto;
+	margin-top: 1%;
+}
+
+#panel {
+	float:right;
+	margin:auto;
+	margin-top:50px;
+	width: 100%;
+	height: 90%;
+	min-height:80%;
+}
+
+.profileButton {
+	position:absolute;
+	border:1px solid gray;
+	height:30px;
+	min-height:30px;
+	width:calc(20% - 4px);
+	background-color:#DBDBDB;
+	cursor:pointer;
+	font-family:"Times New Roman", Times, serif;
+	display:inline-block;
+	margin-left:calc(30% + 1px);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.profileButton p {
+	position:absolute;
+	margin-left:35px;
+	line-height:1px;
+	color:black;
+}
+
+.accountButton {
+	position:relative;
+	border:1px solid gray;
+	height:30px;
+	min-height:30px;
+	width:calc(20% - 4px);
+	background-color:#DBDBDB;
+	cursor:pointer;
+	margin-left: 50%;
+	font-family:"Times New Roman", Times, serif;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.accountButton p {
+	position: absolute;
+	text-align:center;
+	line-height:1px;
+	margin-left:30px;
+	
+}
+
+.selected {
+	background-color:#29A3CC;
+
+}
+
+.selected p {
+	color:white;
+}
+
+.unselected {
+	background-color:white;
+}
+
+/* || Profile Settings Styling */
+
+.profilePic {
+	margin:auto;
+	margin-top:30px;
+	border-radius: 5px;
+	width: 90px;
+	height:80px;
+	border:2px solid #29A3CC;
+	cursor: pointer;
+}
+
+.profilePic img {
+	width:100%;
+	height: 100%;
+}
+
+.profilePic p {
+	text-align:center;
+	padding-top: 10px;
+	color:gray;
+}
+
+.inputElement {
+	margin:auto;
+	display:block;
+	width: 250px;
+	height:30px;
+	margin-top:10px;
+	padding-left:3px;
+}
+
+
+#sButton {
+	display:block;
+	margin:auto;
+	width:100px;
+	height:30px;
+	margin-top:10px;
+	border-radius:8px;
+	background-color:#29A3CC;
+	border: 1px solid white;
+	cursor: pointer;
+	font-family:"Times New Roman", Times, serif;
+	color:white;
+}
+
+#sButton:hover {
+	opacity:0.8;
+}
+
+.imgMessage {
+	color:white;
+	height:20px;
+	margin:0;
+	margin-top:5px;
+	width:100px;
+	margin-left:190px;
+	text-align:center;
+	border-radius:5px;
+	background-color:#29A3CC;
+}
+
+.errMessage {
+	color:red;
+	text-align:center;
+}
+
+input[name=email]{
+	margin-top:30px;
+}
+
+.submitButton {
+	display:block;
+	margin:auto;
+	width:100px;
+	height:30px;
+	margin-top:10px;
+	border-radius:8px;
+	background-color:#29A3CC;
+	border: 1px solid white;
+	cursor: pointer;
+	font-family:"Times New Roman", Times, serif;
+	color:white;
+}
+
+.submitButton:hover {
+	opacity: 0.8;
+}

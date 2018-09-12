@@ -1,0 +1,333 @@
+/*
+ || STYLE BY: David Hoja ||
+*/
+
+body {
+	background-color: rgb(233,234,237);
+}
+
+#wrapper {
+	height:100%;
+	width:50%;
+	margin-left:25%;
+	min-width: 700px;
+}
+
+#upperSection {
+	margin:auto;
+	width: 100%;
+	height: 170px;
+	border-bottom: 1px solid gray;
+}
+
+.profilePic {
+	margin:auto;
+	width: 100px;
+	height: 90px;
+	border: 1px solid #66ccff;
+	border-radius: 10px;
+}
+
+.profilePic img {
+	width:100%;
+	height:100%;
+	border-radius: 10px;
+}
+
+
+#nameContainer {
+	margin:auto;
+	text-align:center;
+	width:150px;
+	height:10px;
+	cursor: default;
+}
+
+#nameContainer p {
+	font-family: sans-serif;
+	line-height:10px;
+	font-size:20px;
+	color: gray;
+}
+
+#nameContainer p:hover {
+	color: #66ccff;
+}
+
+.friendshipButton {
+	margin:auto;
+	text-align:center;
+	width:110px;
+	height:25px;
+	cursor:pointer;
+}
+
+.friendshipButton p {
+	line-height:25px;
+	font-size:12px;
+	color: white;
+}
+
+.requestSent {
+	cursor:default;
+	pointer-events:none;
+}
+
+.notFriend {
+	background-color:#66ccff;
+	font-size:12px;
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	border-radius:5px;
+}
+
+#profileNav {
+	position: relative;
+	text-align: center;
+	margin:auto;
+	width:40%;
+	height:30px;
+}
+
+.profileOption {
+	display:inline-block;
+	width: 30%;
+	height:100%;
+	border: 1px solid black;
+	border-top-width: 0px;
+	border-radius: 3px;
+	line-height: 0px;
+	cursor:pointer;
+}
+
+.profileOption p {
+	vertical-align: middle;
+}
+
+.selected {
+	background-color: #cc66ff;
+	color:white;
+}
+
+/* LEFT SIDE OF THE PROFILE */
+
+#leftSection {
+	float:left;
+	position:relative;
+	border: 1px solid black;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	width:40%;
+	height:100%;
+}
+
+#options {
+	width:100%;
+	font-family: sans-serif;
+	font-size:12px;
+	text-align: center;
+	cursor:pointer;
+}
+
+#options p {
+	width:50%;
+	height:20px;
+	line-height: 20px;
+	margin-left:25%;
+	border: 1px solid gray;
+}
+
+#options p:hover {
+	background-color: gray;
+}
+
+/* Stopping the name fading */
+#options strong p:hover{background-color:white;}
+
+#options strong p {
+	border-width:0px;
+}
+
+
+#info {
+	width:100%;
+	font-family: sans-serif;
+	font-size:12px;
+	text-align: center;
+	cursor:pointer;
+}
+
+#info span:hover {
+	color: gray;
+}
+
+#pictures {
+	width:100%;
+	font-family: sans-serif;
+	font-size:12px;
+	text-align: center;
+	cursor:pointer;
+}
+
+#morePicturesButton {
+	border: 1px solid black;
+	background-color:gray;
+	width:40%;
+	height:20px;
+	margin-left:30%;
+	border-radius:7px;
+}
+
+#morePicturesButton span {
+	line-height: 20px;
+}
+
+#morePicturesButton:hover {
+	background-color: #66ccff;
+}
+
+#friends {
+	width:100%;
+	font-family: sans-serif;
+	font-size:12px;
+	text-align: center;
+	cursor:pointer;
+}
+
+/* RIGHT SECTION STYLE */
+
+#rightSection {
+	float:left;
+	width:59%;
+	height: 500px;
+	border: 1px solid black;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+
+#statusUpdate {
+	width:100%;
+	height:100%;
+	margin-top:10px;
+	text-align: center;
+	opacity:0;
+	display: none;
+	/*border: 1px solid blue;*/
+}
+
+
+textarea[name=content] {
+	resize:none;
+	width:70%;
+	height:50px;
+	border: 1px solid #66ccff;
+	border-radius: 5px;
+}
+
+input[name=addPicture] {
+	height:30px;
+	width:100px;
+	border: 1px dotted black;
+	border-radius: 5px;
+	cursor:pointer;
+	background-color:white;
+}
+
+input[name=privacySettings] {
+	height:30px;
+	border: 1px dotted black;
+	border-radius: 5px;
+	cursor:pointer;
+	background-color:white;
+}
+
+#submitButton {
+	height:30px;
+	width:100px;
+	border: 1px solid white;
+	border-radius: 5px;
+	cursor:pointer;
+	background-color: #66ccff;
+	color:white;
+}
+
+#imagePreview {
+	display: none;
+	opacity:0;
+	margin-right:60%;
+	margin-top:10px;
+	width:40px;
+	height:40px;
+	cursor:pointer;
+	border: 1px solid gray;
+}
+
+
+/* IMAGE UPLOAD */
+#pictureUpload { /* CONTAINER */
+	width:100%;
+	height:300px;
+	margin-top:10px;
+	text-align: center;
+	opacity:0;
+	display: none;
+}
+
+#imgPreview {
+	display:none;
+	opacity:0;
+	display:block;
+	width: 10px;
+	height: 10px;
+	margin:auto;
+}
+
+#choosePic {
+	display:block;
+	margin: auto;
+	width:100px;
+	height:50px;
+	border: 1px solid gray;
+	background-color: #66ccff;
+	border-radius:5px;
+	cursor: pointer;
+	color:white;
+}
+
+input[name=caption] {
+	float:left;
+	width: 53%;
+	height:30px;
+	margin-left:13px;
+	opacity: 0;
+	display:none;
+}
+
+input[name=uploadPicture] {
+	float:left;
+	height:35px;
+	margin-left:3px;
+	cursor:pointer;
+	opacity:0;
+	display:none;
+	background-color: #66ccff;
+	border: 1px solid #66ccff;
+	color:white;
+}
+
+input[name=privacySettingsButton] {
+	float:left;
+	margin-left:3px;
+	width:27%;
+	height:35px;
+	border: 1px dotted black;
+	cursor:pointer;
+	opacity:0;
+	display:none;
+}
+
+
+
+
+
+
